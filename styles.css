@@ -245,7 +245,7 @@ p {
     .images {
         width: 100%;
         flex-direction: column;
-        gap: 50px;
+        gap: 25px;
     }
     a {
         width: 100%;
