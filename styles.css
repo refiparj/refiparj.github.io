@@ -4,6 +4,7 @@
 
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -119,6 +120,7 @@ body {
     gap: 5%;
     font-size: 50px;
     letter-spacing: 15px;
+    text-align: center;
 }
 
 .images {
@@ -130,7 +132,7 @@ body {
 }
 
 img {
-    width: 10%;
+    width: 60%;
     border-radius: 50%;
     border-style: solid;
     border-color: white;
@@ -141,6 +143,13 @@ img {
 
 img:hover {
     opacity: 1;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 /* TELA 4 PC */
@@ -184,4 +193,89 @@ img:hover {
 p {
     font-size: 42px;
     text-align: center;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+    /* TELA 1 */
+    .tela1 {
+        background-image: url(./imgs/tela\ 1\ cel.svg);
+        gap: 10%;
+    }
+    .text-tela1 {
+        width: 65%;
+        font-size: 24px;
+    }
+    .botao-tela1 {
+        font-size: 20px;
+    }
+
+    /* TELA 2 */
+    .tela2 {
+        background-image: url(./imgs/tela\ 1\ cel.svg);
+        gap: 10%;
+    }
+    .text-tela2 {
+        text-align: center;
+        width: 100%;
+        font-size: 24px;
+        flex-direction: row;
+    }
+    .botao-tela2 {
+        font-size: 15px;
+    }
+    .text2-tela2 {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    /* TELA 3 */
+    .tela3 {
+        height: 100vh;
+        background-image: url(./imgs/tela\ 1\ cel.svg);
+        font-size: 24px;
+        flex-direction: row;
+        gap: 0px;
+    }
+    .text-tela3 {
+        position: absolute;
+    }
+    .images {
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+    }
+    a {
+        width: 100%;
+    }
+    img {
+        width: 75%;
+        opacity: 0.2;
+    }
+
+    /* TELA 4 */
+    .tela4 {
+        background-image: url(./imgs/tela\ 3\ cel.svg);
+    }
+    .text-tela4 {
+        font-size: 136px;
+    }
+    .contagem {
+        width: 100%;
+        font-size: 24px;
+    }
+    .dias, .horas, .minutos, .segundos{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    p {
+        font-size: 20px;
+        text-align: center;
+    }
 }
